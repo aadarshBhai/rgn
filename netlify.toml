@@ -2,12 +2,15 @@
   publish = "dist"
   command = "npm run build"
   base = "/"
+  baseDirectory = "/"
 
 [build.environment]
   NODE_VERSION = "18"
   NPM_VERSION = "9"
 
-# Updated: 2026-02-15 to fix deployment issues
+# Force override base directory
+[context.production]
+  base = "/"
 
 [[redirects]]
   from = "/admin/*"
