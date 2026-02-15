@@ -6,10 +6,6 @@
   NODE_VERSION = "18"
   NPM_VERSION = "9"
 
-# Force override base directory
-[context.production]
-  base = "/"
-
 [[redirects]]
   from = "/admin/*"
   to = "/index.html"
